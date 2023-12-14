@@ -11,12 +11,12 @@ int main(){
 
     printf("Enter the element in the x: ");
     for(int i = 0; i<n; i++){
-        scanf("%d", &x[i]);
+        scanf("%f", &x[i]);
     }
 
     printf("Enter the element in the y: ");
     for(int i = 0; i<n; i++){
-        scanf("%d", &y[i]);
+        scanf("%f", &y[i]);
     }
 
     // make the sum
