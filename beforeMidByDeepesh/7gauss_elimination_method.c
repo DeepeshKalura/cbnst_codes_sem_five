@@ -55,16 +55,5 @@ int main(){
         printf("%c is %.2f\n", c , solution[i]);
         c--;
     }  
-
-
-
-
-
-    
-
-
-
-
-
     return 0;
 }
