@@ -1,3 +1,5 @@
+# after mid
+
 15simpson_3_8rule
 14simpson_1_3rule
 13trapezoidal_rule
@@ -6,3 +8,7 @@
 18linear_fitting
 19parabolic_fiting
 20_regression_line
+
+# before mid
+8gauss_jarudan_method
+7gauss_elimination_method
