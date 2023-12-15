@@ -7,7 +7,7 @@ int main(){
     float a, b;
     printf("The number of element:      ");
 
-    scanf("%d", &n);
+    scanf("%f", &n);
 
     printf("Enter the element in the x: ");
     for(int i = 0; i<n; i++){
