@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-
-
-
-
 int main(){
     int n = 3;
     float eq[n][n+1];
@@ -57,15 +53,6 @@ int main(){
         printf("The value of %c is:      %.2f\n",c ,answer);
         c++;
     }
-
-    // printf("The value of y is:      %.2f\n", eq[1][n+1] / eq[1][1]);
-    // printf("The value of z is:      %.2f\n", eq[2][n+1] / eq[2][2]);
-
-
-
-
-    
-
 
 
     return 0;
