@@ -29,13 +29,12 @@ int main()
     }
     //printing table
     printf("\nThe difference table");
-    printf("\n\tX \tY");
-    for(i=0;i<n-1;i++)
-    printf("\t%c^%d",ch,i+1);
+    
     for(i=0;i<n;i++)
-    {printf("\n");
-    for(j=0;j<n+1-i;j++)
-    printf("\t%.4f",arr[i][j]);
+    {
+        printf("\n");
+        for(j=0;j<n+1-i;j++)
+        printf("\t%.4f",arr[i][j]);
     }
     printf("\nEnter the value of x for f(x)");
     scanf("%f",&x);

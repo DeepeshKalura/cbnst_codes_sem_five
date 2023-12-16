@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 float f(float x){
-    return (1 / (1+ x*x));
+    return (( x*x));
 }
 
 int main(){
@@ -17,9 +17,10 @@ int main(){
     scanf("%d", &n);
 
 
-    // finding h;
+    
     float h = (b-a)/n;
     float sum=0;
+
     // formula for trapezoidal rule
 
     for(int i = 0; i<=n; i++){

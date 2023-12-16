@@ -10,7 +10,7 @@ return f;
 void main()
 {
 float x,h,p,y,px=1;
-int i,j,n,ch=30;
+int i,j,n;
 printf("\nEnter the number of data:");
 scanf("%d",&n);
 float arr[n][n+1];
@@ -33,8 +33,7 @@ for(j=2;j<=n;j++)
 //Printing table
     printf("\nDifference table is:-");
     printf("\n\tx\tY");
-    for(i=0;i<=n-2;i++)
-    printf("\t%c^%dY",ch,i+1);
+       
     for(i=0;i<n;i++)
     {printf("\n");
     for(j=0;j<n+1-i;j++)
