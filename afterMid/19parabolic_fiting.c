@@ -12,7 +12,6 @@ void fitParabola(Point data[], int n ,float *a, float *b, float *c) {
         float xi = data[i].x;
         float yi = data[i].y;
 
-        // filling values
 
         sumX += xi;
         sumY += yi;
@@ -21,6 +20,7 @@ void fitParabola(Point data[], int n ,float *a, float *b, float *c) {
         sumX4 += xi*xi*xi*xi;
         sumXY += xi * yi;
         sumX2Y += xi*xi*yi; 
+        
     }
 
     double denominator = n * sumX2 * sumX4 - sumX3 * sumX3;

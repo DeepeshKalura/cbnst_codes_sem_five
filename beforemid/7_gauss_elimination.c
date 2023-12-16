@@ -10,7 +10,7 @@ int main()
     int n;
     printf("Enter number of unknowns: ");
 	scanf("%d", &n);
-	 float a[n][n], x[n], ratio;
+	 float a[20][20], x[20], ratio;
 	 int i,j,k;
 	
 	 for(i=1;i<=n;i++)
@@ -23,7 +23,7 @@ int main()
 	 }
 	
 
-	 for(i=1;i<=n-1;i++)
+	 for(i=1;i<n;i++)
 	 {
 		  for(j=i+1;j<=n;j++)
 		  {

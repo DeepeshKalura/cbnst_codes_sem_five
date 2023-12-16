@@ -1,31 +1,30 @@
-#include <stdio.h>
-#include <math.h>
-
-float f(float x, float y){
-    return  (x * x) + (y * y);
-}
-
-
-int main(){
-    float h = 0.025;
-
-    float x0 = 1, y0 = 1.2, x = 1.05;
-    float k1, k2, k3, k4, k;
-    // runge kutta method
-
-    while(x>x0) {
-        k1 = h * f(x0, y0);
-        k2 = h * f((x0 + (h/2)), (y0 + (k1/2)));
-        k3 = h * f(x0 + h*0.5, y0 + k2*0.5);
-        k4 = h * f(x0  + h, y0 + k3);
-
-        k = (k1 + 2*k2 + 2*k3+ k4) * ( 1.0 / 6.0);
-
-        y0 = y0 + k;
-        x0 += h;
+#include<stdio.h>
+#include<math.h>
+float f(float x,float y);
+int main()
+{
+    float x0,y0,m1,m2,m3,m4,m,y,x,h,xn;
+    printf("Enter x0,y0,xn,h:");
+    scanf("%f %f %f %f",&x0,&y0,&xn,&h);
+    x=x0;
+    y=y0;
+    printf("\n\nX\t\tY\n");
+    
+    while(x<xn)
+    {
+        m1=f(x0,y0);
+        m2=f((x0+h/2.0),(y0+m1*h/2.0));
+        m3=f((x0+h/2.0),(y0+m2*h/2.0));
+        m4=f((x0+h),(y0+m3*h));
+        m=((m1+2*m2+2*m3+m4)/6);
+        y=y+m*h;
+        x=x+h;
+        printf("%f\t%f\n",x,y);
     }
-
-    printf("Runge Kutta Method value of y at %f is :    %f\n", x0, y0);
-
-    return 0;
+}
+float f(float x,float y)
+{
+    float m;
+    m=(x-y)/(x+y);
+    return m;
 }
